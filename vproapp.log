@@ -1,0 +1,65 @@
+[ec2-user@ip-172-31-25-84 java-application-deployment-kubernetes]$ sudo k3s kubectl logs pod/vproapp-7dd8554b7f-vxjws
+25-Feb-2025 18:54:35.591 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.36
+25-Feb-2025 18:54:35.595 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Feb 13 2025 13:13:30 UTC
+25-Feb-2025 18:54:35.595 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.36.0
+25-Feb-2025 18:54:35.596 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+25-Feb-2025 18:54:35.596 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.1.128-136.201.amzn2023.x86_64
+25-Feb-2025 18:54:35.596 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+25-Feb-2025 18:54:35.596 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /opt/java/openjdk
+25-Feb-2025 18:54:35.596 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.6+7-LTS
+25-Feb-2025 18:54:35.598 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Eclipse Adoptium
+25-Feb-2025 18:54:35.598 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /usr/local/tomcat
+25-Feb-2025 18:54:35.598 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /usr/local/tomcat
+25-Feb-2025 18:54:35.694 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/usr/local/tomcat/conf/logging.properties
+25-Feb-2025 18:54:35.695 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+25-Feb-2025 18:54:35.695 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+25-Feb-2025 18:54:35.695 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+25-Feb-2025 18:54:35.695 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+25-Feb-2025 18:54:35.696 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+25-Feb-2025 18:54:35.696 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+25-Feb-2025 18:54:35.696 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+25-Feb-2025 18:54:35.696 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+25-Feb-2025 18:54:35.696 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+25-Feb-2025 18:54:35.697 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+25-Feb-2025 18:54:35.697 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/usr/local/tomcat
+25-Feb-2025 18:54:35.697 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/usr/local/tomcat
+25-Feb-2025 18:54:35.697 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/usr/local/tomcat/temp
+25-Feb-2025 18:54:35.699 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.2].
+25-Feb-2025 18:54:35.702 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+25-Feb-2025 18:54:37.201 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+25-Feb-2025 18:54:37.296 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [2502] milliseconds
+25-Feb-2025 18:54:37.495 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+25-Feb-2025 18:54:37.496 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.36]
+25-Feb-2025 18:54:37.593 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/usr/local/tomcat/webapps/ROOT.war]
+25-Feb-2025 18:54:48.993 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+18:54:49,290 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.5.6
+18:54:49,293 |-INFO in ch.qos.logback.classic.util.ContextInitializer@76bf79a - No custom configurators were discovered as a service.
+18:54:49,293 |-INFO in ch.qos.logback.classic.util.ContextInitializer@76bf79a - Trying to configure with ch.qos.logback.classic.joran.SerializedModelConfigurator
+18:54:49,294 |-INFO in ch.qos.logback.classic.util.ContextInitializer@76bf79a - Constructed configurator of type class ch.qos.logback.classic.joran.SerializedModelConfigurator
+18:54:49,294 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.scmo]
+18:54:49,295 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.scmo]
+18:54:49,300 |-INFO in ch.qos.logback.classic.util.ContextInitializer@76bf79a - ch.qos.logback.classic.joran.SerializedModelConfigurator.configure() call lasted 1 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+18:54:49,300 |-INFO in ch.qos.logback.classic.util.ContextInitializer@76bf79a - Trying to configure with ch.qos.logback.classic.util.DefaultJoranConfigurator
+18:54:49,301 |-INFO in ch.qos.logback.classic.util.ContextInitializer@76bf79a - Constructed configurator of type class ch.qos.logback.classic.util.DefaultJoranConfigurator
+18:54:49,301 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+18:54:49,301 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/usr/local/tomcat/webapps/ROOT/WEB-INF/classes/logback.xml]
+18:54:49,497 |-WARN in ch.qos.logback.classic.joran.action.LevelAction - <level> element is deprecated. Near [level] on line 20
+18:54:49,497 |-WARN in ch.qos.logback.classic.joran.action.LevelAction - Please use "level" attribute within <logger> or <root> elements instead.
+18:54:49,704 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [STDOUT]
+18:54:49,704 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+18:54:49,712 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+18:54:49,801 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.visualpathit.account] to OFF
+18:54:49,801 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework] to OFF
+18:54:49,801 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.hibernate] to OFF
+18:54:49,801 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.hibernate.SQL] to OFF
+18:54:49,801 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.hibernate.type] to OFF
+18:54:49,801 |-INFO in ch.qos.logback.classic.model.processor.LevelModelHandler - ROOT level set to OFF
+18:54:49,801 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [STDOUT] to Logger[ROOT]
+18:54:49,802 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@d2ccdfe - End of configuration.
+18:54:49,802 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@4c612396 - Registering current configuration as safe fallback point
+18:54:49,802 |-INFO in ch.qos.logback.classic.util.ContextInitializer@76bf79a - ch.qos.logback.classic.util.DefaultJoranConfigurator.configure() call lasted 501 milliseconds. ExecutionStatus=DO_NOT_INVOKE_NEXT_IF_ANY
+
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+25-Feb-2025 18:55:08.986 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/usr/local/tomcat/webapps/ROOT.war] has finished in [31,394] ms
+25-Feb-2025 18:55:08.990 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+25-Feb-2025 18:55:09.003 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [31705] milliseconds
