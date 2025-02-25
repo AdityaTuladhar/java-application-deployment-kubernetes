@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vprocache01
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vprocache01
+  template:
+    metadata:
+      labels:
+        app: vprocache01
+    spec:
+      containers:
+        - name: vprocache01
+          image: memcached:1.6.37
+          ports:
+            - containerPort: 11211
+          resources:
+            limits:
+              cpu: 500m
+              memory: 1Gi
+            requests:
+              cpu: 250m
+              memory: 512Mi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: vprocache01
+spec:
+  selector:
+    app: vprocache01
+  ports:
+    - port: 11211
+      targetPort: 11211
+  type: ClusterIP

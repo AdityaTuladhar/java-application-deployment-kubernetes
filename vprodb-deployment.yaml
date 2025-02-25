@@ -1,0 +1,60 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vprodb
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vprodb
+  template:
+    metadata:
+      labels:
+        app: vprodb
+    spec:
+      containers:
+        - name: vprodb
+          image: mysql:8.0.33
+          ports:
+            - containerPort: 3306
+          env:
+            - name: MYSQL_ROOT_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: mysql-secret
+                  key: password
+            - name: MYSQL_DATABASE
+              value: "accounts"
+          volumeMounts:
+            - name: vprodbdata
+              mountPath: /var/lib/mysql
+            - name: db-backup
+              mountPath: docker-entrypoint-initdb.d/db_backup.sql
+              subPath: db_backup.sql
+          resources:
+            limits:
+              cpu: 500m
+              memory: 1Gi
+            requests:
+              cpu: 250m
+              memory: 512Mi
+      volumes:
+        - name: vprodbdata
+          persistentVolumeClaim:
+            claimName: vprodb-pvc
+        - name: db-backup
+          configMap:
+            name: db-backup-config
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: vprodb
+spec:
+  selector:
+    app: vprodb
+  ports:
+    - port: 3306
+      targetPort: 3306
+  type: ClusterIP

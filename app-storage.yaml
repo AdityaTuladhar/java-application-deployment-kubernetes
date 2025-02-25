@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: vproapp-pv
+spec:
+  storageClassName: app
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/mnt/data/vproapp"
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: vproapp-pvc
+spec:
+  storageClassName: app
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi

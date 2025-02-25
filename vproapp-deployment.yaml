@@ -1,0 +1,46 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vproapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vproapp
+  template:
+    metadata:
+      labels:
+        app: vproapp
+    spec:
+      containers:
+        - name: vproapp
+          image: adityatuladhar/vprofileapp:1.0.1
+          ports:
+            - containerPort: 8080
+          volumeMounts:
+            - name: vproappdata
+              mountPath: /usr/local/tomcat/webapps
+          resources:
+            limits:
+              cpu: 500m
+              memory: 1Gi
+            requests:
+              cpu: 250m
+              memory: 512Mi
+      volumes:
+        - name: vproappdata
+          persistentVolumeClaim:
+            claimName: vproapp-pvc
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: vproapp
+spec:
+  selector:
+    app: vproapp
+  ports:
+    - port: 8080
+      targetPort: 8080
+      nodePort: 30535
+  type: NodePort
