@@ -1,0 +1,250 @@
+{
+  "_index": "logs-2025.02.26",
+  "_id": "Jdy2QJUBsRKPPmDjTbvi",
+  "_version": 1,
+  "_score": null,
+  "fields": {
+    "agent.version.keyword": [
+      "8.4.3"
+    ],
+    "kubernetes.node.uid": [
+      "2d69784c-7d8f-4f60-a6d6-e4b351c51518"
+    ],
+    "kubernetes.namespace_uid.keyword": [
+      "bfa6e8a4-e26b-4e97-afa2-3cb17c129273"
+    ],
+    "kubernetes.namespace_uid": [
+      "bfa6e8a4-e26b-4e97-afa2-3cb17c129273"
+    ],
+    "kubernetes.node.labels.kubernetes_io/os": [
+      "linux"
+    ],
+    "container.id": [
+      "e5d70194abe842b40ae3605809872f9b586fcd3475cfe720f99c45032027faa4"
+    ],
+    "kubernetes.labels.pod-template-hash": [
+      "7dd8554b7f"
+    ],
+    "kubernetes.node.labels.kubernetes_io/os.keyword": [
+      "linux"
+    ],
+    "ecs.version.keyword": [
+      "8.0.0"
+    ],
+    "kubernetes.container.name.keyword": [
+      "vproapp"
+    ],
+    "container.image.name": [
+      "docker.io/adityatuladhar/vprofileapp:1.0.1"
+    ],
+    "kubernetes.labels.app": [
+      "vproapp"
+    ],
+    "kubernetes.node.labels.beta_kubernetes_io/os": [
+      "linux"
+    ],
+    "kubernetes.pod.name.keyword": [
+      "vproapp-7dd8554b7f-lv5tp"
+    ],
+    "kubernetes.namespace": [
+      "default"
+    ],
+    "agent.name": [
+      "ip-172-31-18-3.ec2.internal"
+    ],
+    "kubernetes.node.labels.node_kubernetes_io/instance-type.keyword": [
+      "k3s"
+    ],
+    "host_name.keyword": [
+      "ip-172-31-18-3.ec2.internal"
+    ],
+    "kubernetes.node.labels.kubernetes_io/hostname.keyword": [
+      "node1"
+    ],
+    "agent.id.keyword": [
+      "d6122af4-c9de-43bc-998d-b2b2e126f269"
+    ],
+    "kubernetes.node.uid.keyword": [
+      "2d69784c-7d8f-4f60-a6d6-e4b351c51518"
+    ],
+    "input.type": [
+      "container"
+    ],
+    "@version.keyword": [
+      "1"
+    ],
+    "log.offset": [
+      11759
+    ],
+    "tags": [
+      "beats_input_codec_plain_applied"
+    ],
+    "container.runtime": [
+      "containerd"
+    ],
+    "agent.id": [
+      "d6122af4-c9de-43bc-998d-b2b2e126f269"
+    ],
+    "ecs.version": [
+      "8.0.0"
+    ],
+    "kubernetes.node.labels.beta_kubernetes_io/instance-type": [
+      "k3s"
+    ],
+    "message.keyword": [
+      "26-Feb-2025 05:23:21.423 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [30793] milliseconds"
+    ],
+    "log_source": [
+      "/var/log/containers/vproapp-7dd8554b7f-lv5tp_default_vproapp-e5d70194abe842b40ae3605809872f9b586fcd3475cfe720f99c45032027faa4.log"
+    ],
+    "agent.version": [
+      "8.4.3"
+    ],
+    "kubernetes.namespace.keyword": [
+      "default"
+    ],
+    "kubernetes.node.name": [
+      "node1"
+    ],
+    "stream.keyword": [
+      "stderr"
+    ],
+    "input.type.keyword": [
+      "container"
+    ],
+    "kubernetes.node.hostname": [
+      "ip-172-31-18-3.ec2.internal"
+    ],
+    "tags.keyword": [
+      "beats_input_codec_plain_applied"
+    ],
+    "kubernetes.node.labels.node_kubernetes_io/instance-type": [
+      "k3s"
+    ],
+    "kubernetes.node.name.keyword": [
+      "node1"
+    ],
+    "kubernetes.pod.uid": [
+      "67b7c885-16a0-4344-89d9-e4e75eb49fb9"
+    ],
+    "kubernetes.node.hostname.keyword": [
+      "ip-172-31-18-3.ec2.internal"
+    ],
+    "agent.type": [
+      "filebeat"
+    ],
+    "kubernetes.node.labels.beta_kubernetes_io/instance-type.keyword": [
+      "k3s"
+    ],
+    "stream": [
+      "stderr"
+    ],
+    "kubernetes.labels.app.keyword": [
+      "vproapp"
+    ],
+    "kubernetes.node.labels.kubernetes_io/arch.keyword": [
+      "amd64"
+    ],
+    "@version": [
+      "1"
+    ],
+    "kubernetes.pod.name": [
+      "vproapp-7dd8554b7f-lv5tp"
+    ],
+    "container.image.name.keyword": [
+      "docker.io/adityatuladhar/vprofileapp:1.0.1"
+    ],
+    "agent.type.keyword": [
+      "filebeat"
+    ],
+    "kubernetes.pod.ip": [
+      "10.42.2.181"
+    ],
+    "agent.ephemeral_id.keyword": [
+      "07d5c4c2-3eea-45ed-b97f-b43fcd7bdd7b"
+    ],
+    "kubernetes.container.name": [
+      "vproapp"
+    ],
+    "kubernetes.labels.pod-template-hash.keyword": [
+      "7dd8554b7f"
+    ],
+    "kubernetes.node.labels.beta_kubernetes_io/arch.keyword": [
+      "amd64"
+    ],
+    "agent.name.keyword": [
+      "ip-172-31-18-3.ec2.internal"
+    ],
+    "kubernetes.replicaset.name": [
+      "vproapp-7dd8554b7f"
+    ],
+    "log_source.keyword": [
+      "/var/log/containers/vproapp-7dd8554b7f-lv5tp_default_vproapp-e5d70194abe842b40ae3605809872f9b586fcd3475cfe720f99c45032027faa4.log"
+    ],
+    "kubernetes.namespace_labels.kubernetes_io/metadata_name": [
+      "default"
+    ],
+    "message": [
+      "26-Feb-2025 05:23:21.423 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [30793] milliseconds"
+    ],
+    "kubernetes.node.labels.kubernetes_io/hostname": [
+      "node1"
+    ],
+    "kubernetes.node.labels.beta_kubernetes_io/arch": [
+      "amd64"
+    ],
+    "@timestamp": [
+      "2025-02-26T05:23:21.423Z"
+    ],
+    "kubernetes.pod.uid.keyword": [
+      "67b7c885-16a0-4344-89d9-e4e75eb49fb9"
+    ],
+    "kubernetes.replicaset.name.keyword": [
+      "vproapp-7dd8554b7f"
+    ],
+    "container.runtime.keyword": [
+      "containerd"
+    ],
+    "kubernetes.namespace_labels.kubernetes_io/metadata_name.keyword": [
+      "default"
+    ],
+    "agent.ephemeral_id": [
+      "07d5c4c2-3eea-45ed-b97f-b43fcd7bdd7b"
+    ],
+    "kubernetes.node.labels.kubernetes_io/arch": [
+      "amd64"
+    ],
+    "container.id.keyword": [
+      "e5d70194abe842b40ae3605809872f9b586fcd3475cfe720f99c45032027faa4"
+    ],
+    "kubernetes.pod.ip.keyword": [
+      "10.42.2.181"
+    ],
+    "kubernetes.node.labels.beta_kubernetes_io/os.keyword": [
+      "linux"
+    ],
+    "host_name": [
+      "ip-172-31-18-3.ec2.internal"
+    ]
+  },
+  "highlight": {
+    "kubernetes.container.name": [
+      "@kibana-highlighted-field@vproapp@/kibana-highlighted-field@"
+    ],
+    "kubernetes.labels.app": [
+      "@kibana-highlighted-field@vproapp@/kibana-highlighted-field@"
+    ],
+    "kubernetes.replicaset.name": [
+      "@kibana-highlighted-field@vproapp@/kibana-highlighted-field@-7dd8554b7f"
+    ],
+    "log_source": [
+      "/var/log/containers/@kibana-highlighted-field@vproapp@/kibana-highlighted-field@-7dd8554b7f-lv5tp_default_vproapp-e5d70194abe842b40ae3605809872f9b586fcd3475cfe720f99c45032027faa4.log"
+    ],
+    "kubernetes.pod.name": [
+      "@kibana-highlighted-field@vproapp@/kibana-highlighted-field@-7dd8554b7f-lv5tp"
+    ]
+  },
+  "sort": [
+    1740547401423
+  ]
+}
