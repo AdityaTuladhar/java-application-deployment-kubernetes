@@ -12,6 +12,13 @@ spec:
       labels:
         app: vproapp
     spec:
+      initContainers:
+        - name: init-war
+          image: adityatuladhar/vprofileapp:1.0.1
+          command: ["sh", "-c", "cp -r /usr/local/tomcat/webapps/* /mnt/webapps"]
+          volumeMounts:
+            - name: vproappdata
+              mountPath: /mnt/webapps
       containers:
         - name: vproapp
           image: adityatuladhar/vprofileapp:1.0.1
