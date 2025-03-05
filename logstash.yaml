@@ -60,7 +60,7 @@ spec:
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: quickstart
+  name: logstash-config
   labels:
     app.kubernetes.io/name: elasticsearch-logstash
     app.kubernetes.io/component: logstash
